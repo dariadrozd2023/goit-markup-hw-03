@@ -13,6 +13,12 @@
 }
 
 /**--------------RESET------------*/
+*,
+*::before,
+*::after{
+box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -23,7 +29,9 @@ p{margin: 0;
 }
  button{cursor: pointer;}
  image{display: block;}
- 
+ ul{padding-left: 0;
+margin: 0;}
+
 /*---------body--------*/
 
 
@@ -47,7 +55,7 @@ line-height: 1.17;
 color:var(--iris);
 letter-spacing: 0.03em;
 text-transform: uppercase;
-padding:  24px 76px 24px 156px;
+padding:  24px 76px 24px 0px;
 }
 
 .logo-span{
@@ -72,15 +80,17 @@ padding:  24px 76px 24px 156px;
 
 /* -----------nav----------- */
 .container{
-    width: 1440px;
-    padding: 0 15px; 
-    
+    width: 1158px;
+    padding-left: 15px; 
+    padding-right: 15px;
+    margin: 0 auto;
  }
 .header-container{
      display: flex;
-     gap: 40px;
-    
-    
+     gap: 40px;  
+     justify-content: space-between;
+     
+   
 
 } 
 .header-nav{
@@ -93,15 +103,15 @@ padding:  24px 76px 24px 156px;
 }
 
 
-.nav :hover { 
+.nav:hover { 
 color: var(--iris);
 }
 
-.nav :active{
+.nav:active{
 color: var(--iris);
 }
 
-.nav :focus{
+.nav:focus{
 color: var(--iris);  
 }
 .nav-link { 
@@ -127,12 +137,16 @@ color: var(--iris);
 .address{
     display: flex;
     font-style: normal;
+    
+    
+    
 }
 .list-container{
     display: flex;
-    margin-right: auto;
-    gap: 40px;
-    margin: 24px 156px 24px;
+    align-items: center;
+    justify-content: center;
+   
+    
 }
 .mail {
  
@@ -160,7 +174,9 @@ color: var(--iris);
     color:var(--ocean);
    
 }
-
+.address-mail-li{
+    margin-right: 40px;
+}
 
 .tel , .mail{cursor: pointer;} 
 .tel-li :hover{
@@ -179,8 +195,11 @@ color: var(--iris);
 
 /* -----------hero---------------- */
 
-.hero-container{
-    margin: 0 auto;
+.hero-container{ 
+   
+   
+    
+
 }
 .list{
     list-style: none}
@@ -192,9 +211,7 @@ color: var(--iris);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5; 
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+  
     
   }
   
@@ -219,6 +236,12 @@ color: var(--iris);
 
 .mainpage-hero{
     background-color: var(--naviblue);
+   
+    height: 600px;
+    padding-top: 188px;
+    padding-bottom: 48px;
+
+   
       
 }
 .mainpage-hero-title{
@@ -227,8 +250,13 @@ color: var(--iris);
     letter-spacing: 0.02em;
     color:#ffffff;
     line-height: 1.07;
-    padding: 188px 472px 48px;
+    width: 496px;
+    height: 120px;
+    margin: auto;
 }
+   
+ 
+  
 
 
 .button{ cursor: pointer;
@@ -239,6 +267,7 @@ color: var(--iris);
     color: var(--iris);
     cursor: pointer;
     letter-spacing: 0.04em;
+
     
    
 }
@@ -249,19 +278,21 @@ color: var(--iris);
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: flex-start;
-    padding: 16px 32px ;
+
+    width: 169px;
+    height: 56px;
+    
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     letter-spacing: 0.04em;
     background-color:var(--iris);
     color: #FFFFFF;
-    cursor: pointer;
-    margin: 0 auto;
-    margin-bottom: 188px;}
-    
-
+    margin-top: 48px;
+    margin-right: 435px;
+    margin-left: 436px;
+    margin-bottom: 188px;
+   }
+  
 .button-hero :hover{ background-color: var(--ocean);}
 
 .button-hero :focus{ background-color: var(--ocean);}
@@ -269,28 +300,85 @@ color: var(--iris);
 
 
 
+/*****---------------- offers-container------------------ */
+
+.offers-container{
+    width: 1128px;
+    height: 128px;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+   
+   
+
+}
+.offers-list-container{ 
+    display: flex;
+    gap: 24px;
+}
+.offers-title{
+    width:264px;
+    height: 104px;
+}
+
+.offers-list{
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02;
+    color: var(--naviblue);
+    font-size: 36px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.offer-list-item{
+font-weight: 500;
+font-size: 20px;
+line-height:1.2 ;
+letter-spacing: 0.02em;
+color: var(--naviblue);
+margin-bottom: 8px;}
+
+.offers{
+     margin: 156px 120px;
+    gap: 24px;
+
+}
+.text{
+    height: 72px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color:var(--slate)
+        
+        
+}
+
 
 /******* ------------gallery------------- */
 
 .main-gallery-container{
-    margin: 120px 156px;
+    width: 1128px;
+    height: 412px;
+  
 }
 .main-gallery-list{
     display: flex;
-    align-items: center;
-    gap: 24px;
-    margin-top: 72px;
-
+  gap:24px;
+}
+.main-gallery-text{
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--naviblue);
+    margin-bottom: 72px;
 }
 
-.gallery{
 
-
-}
 .gallery-top{ background-color: var(--cloud);
 }
-.gallery-middle{}
-.gallery-button{}
 
 .gallery-title{
     font-weight: 500;
@@ -310,12 +398,10 @@ color:var(--slate);
 /**-------------------team---------------------*/
 
 
-.team-container{
-
-
-
+.team-container-resume{
+    display: flex;
+    gap: 24px;
 }
-
 
 .team-gellery{
 background-color:var(--cloud);
@@ -326,17 +412,15 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--naviblue);
+margin-top: 120px;
 margin-bottom: 72px;
 
 }
 .team-gellery-list{
     background: #FFFFFF;
-  
-
-}
-.team-gellery-card{
-    display: flex;
-
+  width: 264px;
+  height: 380px;
+  margin-bottom: 120px;
 
 }
 
@@ -347,8 +431,8 @@ margin-bottom: 72px;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--naviblue);
-    margin-top: 72px;
-
+    margin-top: 32px;
+    margin-bottom: 28px;    
 }
 .team-gellery-subtext{
     font-size: 16px;
@@ -356,7 +440,7 @@ margin-bottom: 72px;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--slate);
-
+    padding-bottom: 32px;
 }
 
 
@@ -366,7 +450,33 @@ margin-bottom: 72px;
     background-color:var(--naviblue);
     color:#ffffff;}
 
-    .logo-footer{
+ 
+
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    height: 312px;
+    display: flex;
+    padding-top: 100px;
+padding-bottom: 100px;
+}
+    .footer-title{
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color:var(--cornflower);
+width: 264px;
+height: 72px;
+
+}
+
+.logo-footer{
+
+    margin-right: auto;
+   
+}
+
+/*    .logo-footer{
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 800;
@@ -375,52 +485,4 @@ line-height:  1.166 ;
 letter-spacing: 0.03em;
 color: var(--cloud);
 
-}
-    .footer-title{
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color:var(--cornflower);
-}
-.offers{
-     margin: 156px 120px;
-    gap: 24px;
-
-}
-
-.offers-list{
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02;
-    color: var(--naviblue);
-    font-size: 36px;
-    text-align: center;
-    text-transform: capitalize;
-}
-.offer-list-item{
-font-weight: 500;
-font-size: 20px;
-line-height:1.2 ;
-letter-spacing: 0.02em;
-color: var(--naviblue);
-padding-top: 24px;
-
-
-
-}
-.text{
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color:var(--slate)
-}
-.main-gallery-text{
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--naviblue);
-
-}
+} */
