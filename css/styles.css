@@ -58,7 +58,9 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 margin-right:  76px;
 }
-/* padding:  24px 0px 24px 0px; */
+.list-container{
+    display: block;
+}
 .list.header-container{ 
     border: none;
 }
@@ -97,7 +99,10 @@ margin-right:  76px;
      justify-content: space-between;
      
 }  
-
+.header-list-container{
+    display: flex;
+    
+}
 
 .header-nav{
     display: flex;
@@ -106,7 +111,7 @@ margin-right:  76px;
 }
 
 
-.nav:hover { 
+.nav:hover{ 
 color: var(--iris);
 }
 
@@ -127,15 +132,15 @@ color: var(--iris);
 .nav-link-item{
     padding-top: 24px;
     padding-bottom: 24px;
-
+    margin-right:40px;
 }
-.nav-link-item :hover { 
+.nav-link-item:hover { 
     color:var(--ocean);
 }
-.nav-link-item :active{
+.nav-link-item:active{
     color:var(--ocean);
 }
-.nav-link-item :focus{
+.nav-link-item:focus{
     color:var(--ocean);
 }
 
@@ -174,13 +179,13 @@ color: var(--iris);
     color:var(--slate);
 }
 .mail cursor{ align-self: start;}
-.mail-li :hover{
+.mail-li:hover{
     color: var(--ocean);
 }
-.mail-li :focus{
+.mail-li:focus{
     color:var(--ocean);
 }
-.mail-li :active{
+.mail-li:active{
     color:var(--ocean);
    
 }
@@ -189,13 +194,13 @@ color: var(--iris);
 }
 
 .tel , .mail{cursor: pointer;} 
-.tel-li :hover{
+.tel-li:hover{
     color:var(--ocean);
 }
-.tel :focus{
+.tel:focus{
     color:var(--ocean);
 }
-.tel :active{
+.tel:active{
     color:var(--ocean);
 }
 
@@ -204,13 +209,8 @@ color: var(--iris);
 
 
 /* -----------hero---------------- */
-
-.hero-container{ 
    
    
-    
-
-}
 .list{
     list-style: none}
 .link{
@@ -228,9 +228,9 @@ color: var(--iris);
 
 
 
-.hero :hover {  color: var(--iris); }
-.hero :active{ color: var(--iris);}
-.hero :focus{ color: var(--iris);}
+.hero:hover {  color: var(--iris); }
+.hero:active{ color: var(--iris);}
+.hero:focus{ color: var(--iris);}
 
 
 .hero-list-item{ 
@@ -238,10 +238,9 @@ color: var(--iris);
     font-size: 16px;
     line-height: 1.5 ;
     display: flex; 
-    margin-top: 96px;
     justify-content: center;
     gap: 24px;
-    margin-bottom: 72px;
+   margin-bottom: 72px;
     
     }
 
@@ -277,8 +276,6 @@ color: var(--iris);
     line-height: 1.5;
     color: var(--iris);
     letter-spacing: 0.04em;
-    width: 126px;
-    height: 48px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 24px;
@@ -303,8 +300,8 @@ color: var(--iris);
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
-    width: 169px;
-    height: 56px;
+    min-width: 169px;
+ 
     border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -312,16 +309,15 @@ color: var(--iris);
     background-color:var(--iris);
     color: #FFFFFF;
     margin-top: 48px;
-    margin-left: auto;
     padding-top: 16px;
     padding-right: 32px; 
-    padding-top: 32px;
+    padding-bottom: 16px;
     padding-left: 32px;
 }
   
-.button-hero :hover{ background-color: var(--ocean);}
+.button-hero:hover{ background-color: var(--ocean);}
 
-.button-hero :focus{ background-color: var(--ocean);}
+.button-hero:focus{ background-color: var(--ocean);}
 
 
 
@@ -401,7 +397,11 @@ margin-bottom: 8px;}
     margin-bottom: 72px;
    
 }
+.gallery-top{
+    padding-top: 96px;
+    padding-bottom: 120px;
 
+}
 .gallery-title{
     font-weight: 500;
 font-size: 20px;
@@ -409,7 +409,6 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 color:var(--naviblue);
 margin-bottom: 8px;
-margin-left: 16px;
 
 
 }
@@ -419,8 +418,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color:var(--slate);
-margin-left: 16px;
-margin-bottom: 32px;
+
 }
 .main-gallery-img{
     display: block;
@@ -510,18 +508,19 @@ display: block;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    margin-bottom: 120px;
+    row-gap: 48px;
 }
 .main-photo-link{
     width: 360px;
-    height: 420px;
     background: #FFFFFF;
-    border: 1px solid #E7E9FC;
-    margin-bottom: 32px;
-    
 }
-.img{
-    margin-bottom: 32px;
-
+.title-wrap{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-left: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
 }
 
