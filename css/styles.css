@@ -216,7 +216,9 @@ color: var(--iris);
 .link{
      text-decoration: none;
 }
-
+.hero-container{
+    text-align: center;
+}
  .hero{
     font-weight: 500;
     font-size: 16px;
