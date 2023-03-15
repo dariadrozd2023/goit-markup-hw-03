@@ -38,6 +38,7 @@ margin: 0;}
 
 body {font-family: "Roboto", sans-serif;
     color: #434455 ;
+    background-color: #FFFFFF;
  }
 
 
@@ -55,9 +56,9 @@ line-height: 1.17;
 color:var(--iris);
 letter-spacing: 0.03em;
 text-transform: uppercase;
-padding:  24px 76px 24px 0px;
-
+margin-right:  76px;
 }
+/* padding:  24px 0px 24px 0px; */
 .list.header-container{ 
     border: none;
 }
@@ -88,12 +89,13 @@ padding:  24px 76px 24px 0px;
     padding-right: 15px;
     margin: 0 auto;
  }
+ .header{
+    border-bottom: 1px solid #E7E9FC;
+}
 .header-container{
      display: flex;
-     gap: 40px;  
      justify-content: space-between;
-     background: #FFFFFF;
-     border-bottom: 1px solid #E7E9FC;
+     
 }  
 
 
@@ -122,6 +124,11 @@ color: var(--iris);
     color: var(--naviblue);
 
 }
+.nav-link-item{
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+}
 .nav-link-item :hover { 
     color:var(--ocean);
 }
@@ -146,6 +153,8 @@ color: var(--iris);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
    
     
 }
@@ -241,10 +250,8 @@ color: var(--iris);
 
 .mainpage-hero{
     background-color: var(--naviblue);
-   
-    height: 600px;
     padding-top: 188px;
-    padding-bottom: 48px;
+    padding-bottom: 188px;
 
    
       
@@ -256,8 +263,7 @@ color: var(--iris);
     color:#ffffff;
     line-height: 1.07;
     width: 496px;
-    height: 120px;
-    margin: auto;
+    margin: 0 auto;
 }
    
  
@@ -297,20 +303,21 @@ color: var(--iris);
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
-
     width: 169px;
     height: 56px;
-    
+    border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     letter-spacing: 0.04em;
     background-color:var(--iris);
     color: #FFFFFF;
     margin-top: 48px;
-    margin-right: 435px;
-    margin-left: 436px;
-    margin-bottom: 188px;
-   }
+    margin-left: auto;
+    padding-top: 16px;
+    padding-right: 32px; 
+    padding-top: 32px;
+    padding-left: 32px;
+}
   
 .button-hero :hover{ background-color: var(--ocean);}
 
@@ -322,11 +329,9 @@ color: var(--iris);
 /*****---------------- offers-container------------------ */
 
 .offers-container{
-    width: 1128px;
-    height: 128px;
-    margin-top: 120px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    ;
    
    
 
@@ -337,7 +342,6 @@ color: var(--iris);
 }
 .offers-title{
     width:264px;
-    height: 104px;
 }
 
 .offers-list{
@@ -358,8 +362,10 @@ color: var(--naviblue);
 margin-bottom: 8px;}
 
 .offers{
-     margin: 156px 120px;
+   
     gap: 24px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 
 }
 .text{
@@ -376,16 +382,14 @@ margin-bottom: 8px;}
 
 /******* ------------gallery------------- */
 
-.main-gallery-container{
-    width: 1128px;
-    height: 412px;
-    margin-bottom: 72px;
-  
+.main-gallery{
+    padding-bottom: 120px;
+
 }
 .main-gallery-list{
     display: flex;
-  gap:24px;
-  margin-bottom: 120px;
+    gap:24px;
+    
 }
 .main-gallery-text{
     font-size: 36px;
@@ -394,11 +398,8 @@ margin-bottom: 8px;}
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--naviblue);
+    margin-bottom: 72px;
    
-}
-
-
-.gallery-top{ 
 }
 
 .gallery-title{
@@ -421,14 +422,18 @@ color:var(--slate);
 margin-left: 16px;
 margin-bottom: 32px;
 }
+.main-gallery-img{
+    display: block;
+    width: 360px;
+}
 /**-------------------team---------------------*/
 
 .team{
      background:var(--cloud);
-    
+    padding-bottom: 120px;
+    padding-top: 120px;
  }
     .team-container{
-        padding-top: 120px;
     }
 .team-container-resume{
     
@@ -449,11 +454,9 @@ margin-bottom: 72px;
 
 }
 .team-gellery-list{
-
- width: 264px;
-  height: 380px;
-  margin-bottom: 120px;
-
+background-color: #FFFFFF;
+width: 264px;
+background-repeat: 4px;
 }
 
 .team-gellery-text{
@@ -464,7 +467,7 @@ margin-bottom: 72px;
     letter-spacing: 0.02em;
     color: var(--naviblue);
     margin-top: 32px;
-    margin-bottom: 28px;    
+    margin-bottom: 8px;    
 }
 .team-gellery-subtext{
     font-size: 16px;
@@ -480,17 +483,13 @@ margin-bottom: 72px;
 /* ---------footer----------- */
 .footer{
     background-color:var(--naviblue);
-    color:#ffffff;}
-
- 
-
-.container-footer{
-    display: flex;
-    flex-direction: column;
-    height: 312px;
-    display: flex;
+    color:#ffffff;
     padding-top: 100px;
-padding-bottom: 100px;
+    padding-bottom: 100px;}
+    
+.container-footer{
+
+
 }
     .footer-title{
 font-size: 16px;
@@ -503,8 +502,8 @@ height: 72px;
 }
 
 .logo-footer{
-
-    margin-right: auto;
+display: block;
+  margin-bottom: 16px;
    
 }
 .main-photo{
