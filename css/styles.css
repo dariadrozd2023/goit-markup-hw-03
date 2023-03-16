@@ -56,7 +56,10 @@ line-height: 1.17;
 color:var(--iris);
 letter-spacing: 0.03em;
 text-transform: uppercase;
-margin-right:  76px;
+
+}
+.logo-header{
+    margin-right:  76px;
 }
 .list-container{
     display: block;
@@ -289,9 +292,18 @@ color: var(--iris);
   
 }
 
-.button:hover{background: var(--iris); color: #ffffff;}
-.button:focus{background: var(--iris); color: #ffffff;}
-.button:active{background: var(--iris); color: #ffffff;}
+.button:hover{
+    background: var(--iris); color: #ffffff;
+    border-color:transparent;
+}
+.button:focus{
+    background: var(--iris); color: #ffffff;
+    border-color:transparent;
+}
+.button:active{
+    background: var(--iris); color: #ffffff;
+
+}
 
 
 
@@ -326,17 +338,8 @@ color: var(--iris);
 
 /*****---------------- offers-container------------------ */
 
-.offers-container{
-    padding-top: 120px;
-    padding-bottom: 120px;
-    ;
-   
-   
-
-}
 .offers-list-container{ 
     display: flex;
-    gap: 24px;
 }
 .offers-title{
     width:264px;
@@ -384,6 +387,12 @@ margin-bottom: 8px;}
     padding-bottom: 120px;
 
 }
+.gallery-text{
+    padding-top: 32px;
+    padding-right: 16px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+}
 .main-gallery-list{
     display: flex;
     gap:24px;
@@ -423,8 +432,13 @@ color:var(--slate);
 
 }
 .main-gallery-img{
-    display: block;
+
     width: 360px;
+}
+.gallery-img
+{display: block;
+max-width: 100%;
+height: auto;
 }
 /**-------------------team---------------------*/
 
@@ -456,7 +470,8 @@ margin-bottom: 72px;
 .team-gellery-list{
 background-color: #FFFFFF;
 width: 264px;
-background-repeat: 4px;
+border-radius: 0px 0px 4px 4px;
+
 }
 
 .team-gellery-text{
@@ -466,8 +481,7 @@ background-repeat: 4px;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--naviblue);
-    margin-top: 32px;
-    margin-bottom: 8px;    
+  
 }
 .team-gellery-subtext{
     font-size: 16px;
@@ -475,7 +489,7 @@ background-repeat: 4px;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--slate);
-    padding-bottom: 32px;
+
 }
 
 
@@ -502,7 +516,7 @@ height: 72px;
 }
 
 .logo-footer{
-display: block;
+display: inline-block;
   margin-bottom: 16px;
    
 }
@@ -525,4 +539,15 @@ display: block;
     border-bottom: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
 }
-
+.visually-hidden {
+    position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+  }
