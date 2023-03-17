@@ -27,10 +27,21 @@ h5,
 h6,
 p{margin: 0;
 }
- button{cursor: pointer;}
- image{display: block;}
- ul{padding-left: 0;
-margin: 0;}
+
+ button{
+    cursor: pointer;
+}
+
+ img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ ul{
+    padding-left: 0;
+margin: 0;
+}
 
 /*---------body--------*/
 
@@ -56,10 +67,13 @@ line-height: 1.17;
 color:var(--iris);
 letter-spacing: 0.03em;
 text-transform: uppercase;
-
 }
 .logo-header{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     margin-right:  76px;
+
 }
 .list-container{
     display: block;
@@ -130,11 +144,13 @@ color: var(--iris);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--naviblue);
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
 }
 .nav-link-item{
-    padding-top: 24px;
-    padding-bottom: 24px;
+
     margin-right:40px;
 }
 .nav-link-item:hover { 
@@ -161,9 +177,7 @@ color: var(--iris);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
-   
+
     
 }
 .mail {
@@ -172,7 +186,11 @@ color: var(--iris);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color:var(--slate);}
+    color:var(--slate);
+    display: block;
+padding-top: 24px;
+padding-bottom: 24px;
+}
 .tel {
     
     font-weight: 400;
@@ -340,9 +358,11 @@ color: var(--iris);
 
 .offers-list-container{ 
     display: flex;
+    gap: 24px;
 }
 .offers-title{
-    width:264px;
+   flex-basis: auto;
+width: 264px;
 }
 
 .offers-list{
@@ -368,14 +388,11 @@ margin-bottom: 8px;}
 
 }
 .text{
-    height: 72px;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color:var(--slate)
-        
-        
+        color:var(--slate);  
 }
 
 
@@ -433,12 +450,7 @@ color:var(--slate);
 
     width: 360px;
 }
-.gallery-img
-{display: block;
-max-width: 100%;
-height: auto;
-}
-/**-------------------team---------------------*/
+/*-------------team---------------------*/
 
 .team{
      background:var(--cloud);
@@ -479,6 +491,7 @@ border-radius: 0px 0px 4px 4px;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--naviblue);
+    margin-bottom: 8px;
   
 }
 .team-gellery-subtext{
